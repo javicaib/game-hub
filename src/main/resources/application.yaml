@@ -1,4 +1,5 @@
 spring:
   application:
     name: GameHub
-
+server:
+  port: 8080
