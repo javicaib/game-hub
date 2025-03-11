@@ -1,5 +1,3 @@
 spring:
-  application:
-    name: GameHub
-server:
-  port: 8081
+  profiles:
+    active: dev

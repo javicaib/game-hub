@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: GameHub-DEV
+  datasource:
+    url: jdbc:mariadb://localhost:3306/games
+    username: root
+    password: root
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
+        show_sql: true
+  sql:
+    init:
+      mode: always
+
+server:
+  port: 8085
+logging:
+  level:
+    org.hibernate.sql: debug
